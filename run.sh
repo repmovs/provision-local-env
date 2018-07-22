@@ -1,4 +1,5 @@
 sudo zypper install python3-setuptools git
+sudo pip install --upgrade pip
 sudo pip install ansible
 
 cd ~

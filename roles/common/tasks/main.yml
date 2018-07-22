@@ -1,5 +1,4 @@
 ---
+  - include: preinstall.yml
   - include: vlc.yml
   - include: youtube.yml
-  - include: mozilla.yml
-  - include: os_upgrade.yml

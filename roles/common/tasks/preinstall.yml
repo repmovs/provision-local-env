@@ -7,6 +7,13 @@
     name: "PackmanEssentials"
     auto_import_keys: "yes"
 
+- name: Mozilla | repos added
+  become: "yes"
+  zypper_repository:
+    repo: "http://download.opensuse.org/repositories/mozilla/openSUSE_Tumbleweed/"
+    name: "mozilla"
+    auto_import_keys: "yes"
+
 - name: OS | Upgrade with vendor change
   become: "yes"
   zypper:
