@@ -1,0 +1,12 @@
+---
+- name: VLC | uninstall version 3
+  become: yes
+  zypper:
+    name: vlc
+    status: absent
+
+- name: VLC | install version 4
+  become: yes
+  zypper:
+    name: vlc-beta
+    status: present

@@ -1,0 +1,35 @@
+music/video: vlc-beta
+#images: imagemagick, gwenview
+#books: okular
+#torrents: ktorrent
+#browser: firefox
+coding: visual studio code
+  Replace <"enableTelemetry": true,>  with <"enableTelemetry": false,>
+
+zypper install -t pattern devel_basis (build-essential)(zypper info -t pattern devel_basis)
+
+languages: nvm, node, npm, go, #python
+tools: git, react-create,# curl, wget
+virtual: vagrant, docker, docker-compose, virtualbox
+open ports: 3000 for testing
+add hdparm command for hdd
+plasma:
+  remove titlebar from firefox, dolphin, ktorrent
+
+  sound volume 150%:
+  double click
+  breeze-dark theme
+  task bar on left side or full config
+    plasma-org.kde.plasma.desktop-appletsrc in ~/.config
+  locale for time 
+ 
+  dolphin config
+    dolphinrc in ~/.config
+    .directory in ~/.local/share/dolphin/view_properties/global/
+    dolphinui.rc in ~/.local/share/kxmlgui5/dolphin/
+  keyboard layouts
+    setxkbmap -model pc101 -layout us,ru -option grp:alt_shift_toggle
+    kxkbrc in ~/.config
+  ktorrent config
+    ktorrentrc in ~/.config
+

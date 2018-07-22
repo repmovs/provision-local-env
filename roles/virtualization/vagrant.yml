@@ -1,0 +1,6 @@
+---
+- name: Vagrant | install
+  become: yes
+  zypper:
+    name: vagrant
+    status: present

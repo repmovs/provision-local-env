@@ -1,0 +1,7 @@
+- name: setup local workspace
+  hosts: local
+  connection: local
+  roles:
+    - gui
+    - virtualization
+    - common

@@ -1,0 +1,15 @@
+---
+- name: dolphin - copy dolphinrc file
+  copy:
+      src: /dolphin/dolphinrc
+      dest: {{ ansible_env.HOME }}/.config/dolphinrc
+  
+- name: dolphin - copy .directory file
+  copy: 
+      src: /dolphin/.directory
+      dest: {{ ansible_env.HOME }}/.local/share/dolphin/view_properties/global/.directory
+
+- name: dolphin - copy dolphinui.rc file
+  copy: 
+      src: /dolphin/dolphinui.rc
+      dest: {{ ansible_env.HOME }}/.local/share/kxmlgui5/dolphin/dolphinui.rc

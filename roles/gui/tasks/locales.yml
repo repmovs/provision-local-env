@@ -1,0 +1,10 @@
+---
+- name: locale - set time to 24h
+  lineinfile:
+    path: {{ ansible_env.HOME }}/.i18n
+    line: 'export LC_TIME=en_GB.UTF-8'
+
+- name: locale - set utf8 locale
+  lineinfile:
+    path: {{ ansible_env.HOME }}/.i18n
+    line: 'export LC_ALL=en_US.UTF-8'

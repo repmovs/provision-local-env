@@ -1,0 +1,11 @@
+---
+- name: KDE - Open files with double click
+  command: kwriteconfig5 --file ~/.config/kdeglobals --group KDE --key SingleClick false
+
+- name: Plasma - copy plasma-org.kde.plasma.desktop-appletsrc file
+  copy:
+      src: plasma-org.kde.plasma.desktop-appletsrc
+      dest: {{ ansible_env.HOME }}/.config/plasma-org.kde.plasma.desktop-appletsrc
+
+- name: Plasma - Set Breeze Dark Theme
+  command: lookandfeeltool --apply org.kde.breezedark.desktop

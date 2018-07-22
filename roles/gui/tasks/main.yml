@@ -1,0 +1,7 @@
+---
+  - include: dolphin.yml
+  - include: ktorrent.yml
+  - include: kbd_layouts.yml
+  - include: locales.yml
+  - include: plasma.yml
+
