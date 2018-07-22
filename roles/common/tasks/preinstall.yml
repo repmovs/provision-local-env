@@ -1,0 +1,21 @@
+---
+
+- name: OS | Packman repos added
+  become: "yes"
+  zypper_repository:
+    repo: "http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Essentials/"
+    name: "PackmanEssentials"
+    auto_import_keys: "yes"
+
+- name: OS | Upgrade with vendor change
+  become: "yes"
+  zypper:
+    name: "*"
+    state: dist-upgrade
+    extra_args: "--allow-vendor-change"
+
+- name: OS | gstreamer-plugins-libav is installed
+  become: "yes"
+  zypper:
+    name: "gstreamer-plugins-libav"
+    state: present

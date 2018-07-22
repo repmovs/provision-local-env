@@ -2,4 +2,4 @@
 - name: Ktorrent - copy ktorrentrc file
   copy:
     src: ktorrentrc
-    dest: {{ ansible_env.HOME }}/.config/ktorrentrc
+    dest: "{{ ansible_env.HOME }}/.config/ktorrentrc"

@@ -2,7 +2,7 @@
 - name: Keyboard layouts - copy kxkbrc file
   copy:
     src: kxkbrc
-    dest: {{ ansible_env.HOME }}/.config/kxkbrc
+    dest: "{{ ansible_env.HOME }}/.config/kxkbrc"
 
 - name: Keyboard layouts - setxkbmap command
   command: "setxkbmap -model pc101 -layout us,ru -option grp:alt_shift_toggle"

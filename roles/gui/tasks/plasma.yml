@@ -4,8 +4,8 @@
 
 - name: Plasma - copy plasma-org.kde.plasma.desktop-appletsrc file
   copy:
-      src: plasma-org.kde.plasma.desktop-appletsrc
-      dest: {{ ansible_env.HOME }}/.config/plasma-org.kde.plasma.desktop-appletsrc
+      src: "plasma-org.kde.plasma.desktop-appletsrc"
+      dest: "{{ ansible_env.HOME }}/.config/plasma-org.kde.plasma.desktop-appletsrc"
 
 - name: Plasma - Set Breeze Dark Theme
   command: lookandfeeltool --apply org.kde.breezedark.desktop
