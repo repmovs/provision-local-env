@@ -3,10 +3,10 @@
   become: yes
   zypper:
     name: vlc
-    status: absent
+    state: absent
 
 - name: VLC | install version 4
   become: yes
   zypper:
     name: vlc-beta
-    status: present
+    state: present

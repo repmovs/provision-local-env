@@ -3,4 +3,4 @@
   become: yes
   zypper:
     name: youtube-dl
-    status: present
+    state: present
