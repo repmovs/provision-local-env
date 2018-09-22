@@ -3,9 +3,9 @@
   zypper:
     name: "{{ item }}"
     state: present
-    with_items:
-      - konsole
-      - ktorrent
-      - dolphin
-      - okular
-      - gwenview
+  with_items:
+    - konsole
+    - ktorrent
+    - dolphin
+    - okular
+    - gwenview

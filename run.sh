@@ -8,7 +8,7 @@ cd setup
 git clone https://github.com/repmovs/provision-local-env.git
 cd provision-local-env
 
-ansible-playbook setup.yml -i HOSTS
+ansible-playbook setup.yml -i HOSTS --ask-become-pass
 
 source ~/.bashrc
 exit 0
