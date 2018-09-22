@@ -1,6 +1,0 @@
----
-- name: youtube-dl | install
-  become: yes
-  zypper:
-    name: youtube-dl
-    state: present

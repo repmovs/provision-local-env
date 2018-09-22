@@ -1,0 +1,11 @@
+- name: KDE | user apps installed
+  become: yes
+  zypper:
+    name: { { item } }
+    state: present
+    with_items:
+      - konsole
+      - ktorrent
+      - dolphin
+      - okular
+      - gwenview

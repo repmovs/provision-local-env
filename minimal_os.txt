@@ -33,3 +33,13 @@ plasma:
   ktorrent config
     ktorrentrc in ~/.config
 
+already installed: python 2, 3, wget, curl
+
+kde_apps: konsole, dolphin, ktorrent, okular, gwenview, 
+user: firefox (with repo), vlc-beta
+dev_install git, 
+nvm, node, npm, 
+echo "alias nodeupdate='nvm install node --reinstall-packages-from=node && nvm cache clear'" >> ~/.bashrc
+$ nodeupdate 
+go,
+

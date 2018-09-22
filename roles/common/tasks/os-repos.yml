@@ -1,0 +1,20 @@
+- name: OS | Packman repos added
+  become: yes
+  zypper_repository:
+    repo: "http://ftp.gwdg.de/pub/linux/misc/packman/suse/openSUSE_Tumbleweed/Essentials/"
+    name: PackmanEssentials
+    auto_import_keys: yes
+
+- name: OS | Upgrade with vendor change
+  become: yes
+  zypper:
+    name: *
+    state: dist-upgrade
+    extra_args: --allow-vendor-change
+
+- name: OS | Mozilla repos added
+  become: yes
+  zypper_repository:
+    repo: "http://download.opensuse.org/repositories/mozilla/openSUSE_Tumbleweed/"
+    name: Mozilla
+    auto_import_keys: yes

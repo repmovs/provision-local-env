@@ -1,0 +1,9 @@
+- name: User | multimedia apps installed
+  become: yes
+  zypper:
+    name: { { item } }
+    state: present
+    with_items:
+      - vlc-beta
+      - MozillaFirefox
+      - youtube-dl
