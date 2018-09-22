@@ -8,7 +8,7 @@
 - name: OS | Upgrade with vendor change
   become: yes
   zypper:
-    name: *
+    name: "*"
     state: dist-upgrade
     extra_args: --allow-vendor-change
 
