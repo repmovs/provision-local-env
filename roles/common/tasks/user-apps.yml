@@ -1,7 +1,7 @@
 - name: User | multimedia apps installed
   become: yes
   zypper:
-    name: { { item } }
+    name: "{{ item }}"
     state: present
     with_items:
       - vlc-beta
