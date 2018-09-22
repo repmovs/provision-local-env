@@ -1,4 +1,3 @@
----
-  - include: preinstall.yml
-  - include: vlc.yml
-  - include: youtube.yml
+- include: os-repos.yml
+- include: kde-apps.yml
+- include: user-apps.yml
