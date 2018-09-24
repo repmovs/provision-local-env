@@ -1,3 +1,4 @@
-- include: os-repos.yml
-- include: kde-apps.yml
-- include: user-apps.yml
+#- include: preinstall.yml
+#- include: kde-apps.yml
+#- include: user-apps.yml
+- include: dev-apps.yml

@@ -1,9 +1,17 @@
-- name: User | multimedia apps installed
+- name: User | firefox is installed
   become: yes
   zypper:
-    name: "{{ item }}"
+    name: MozillaFirefox
     state: present
-  with_items:
-    - vlc-beta
-    - MozillaFirefox
-    - youtube-dl
+
+- name: User | vlc-beta is installed
+  become: yes
+  zypper:
+    name: vlc-beta
+    state: present
+
+- name: User | youtube-dl is installed
+  become: yes
+  zypper:
+    name: youtube-dl
+    state: present

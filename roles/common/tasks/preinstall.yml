@@ -18,3 +18,9 @@
     repo: "http://download.opensuse.org/repositories/mozilla/openSUSE_Tumbleweed/"
     name: Mozilla
     auto_import_keys: yes
+
+- name: OS | Install git
+  become: yes
+  zypper:
+    name: git
+    state: present

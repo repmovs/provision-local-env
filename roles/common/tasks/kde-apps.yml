@@ -1,11 +1,29 @@
-- name: KDE | user apps installed
+- name: KDE | konsole is installed
   become: yes
   zypper:
-    name: "{{ item }}"
+    name: konsole
     state: present
-  with_items:
-    - konsole
-    - ktorrent
-    - dolphin
-    - okular
-    - gwenview
+
+- name: KDE | ktorrent is installed
+  become: yes
+  zypper:
+    name: ktorrent
+    state: present
+
+- name: KDE | dolphin is installed
+  become: yes
+  zypper:
+    name: dolphin
+    state: present
+
+- name: KDE | okular is installed
+  become: yes
+  zypper:
+    name: okular
+    state: present
+
+- name: KDE | gwenview is installed
+  become: yes
+  zypper:
+    name: gwenview
+    state: present
