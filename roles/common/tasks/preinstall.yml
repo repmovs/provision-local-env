@@ -24,3 +24,14 @@
   zypper:
     name: git
     state: present
+
+- name: OS | set git credentials helper to cache
+  git_config:
+    name: credential.helper
+    value: cache
+
+- name: OS | set git credentials helper to cache
+  git_config:
+    scope: global
+    name: credential.helper
+    value: "cache --timeout=3600"
