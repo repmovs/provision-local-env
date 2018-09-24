@@ -5,6 +5,7 @@
     state: present
 
 - name: Dev | import Microsofot keys
+  become: yes
   rpm_key:
     state: present
     key: "https://packages.microsoft.com/keys/microsoft.asc"
